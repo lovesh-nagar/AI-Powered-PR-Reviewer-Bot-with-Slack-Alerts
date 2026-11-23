@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🤖 AI-Powered PR Reviewer Bot with Slack Alerts
 
 A complete DevOps project that automatically reviews Pull Requests using an LLM and sends Slack alerts for Critical/High severity findings.
@@ -112,3 +113,6 @@ Add this to your resume under **Projects**:
 ---
 
 Built as part of an AI + DevOps learning path.
+=======
+# AI-Powered-PR-Reviewer-Bot-with-Slack-Alerts
+>>>>>>> 43eb52d53dd8515a9af97e0a942bdcdb32c2d647
