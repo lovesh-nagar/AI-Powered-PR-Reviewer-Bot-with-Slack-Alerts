@@ -9,9 +9,10 @@ Works with:
 - Any OpenAI-compatible endpoint (Ollama, LocalAI, Azure OpenAI, AWS Bedrock, etc.)
 """
 
+import json
 import os
 import sys
-import json
+
 import requests
 from dotenv import load_dotenv
 
@@ -123,7 +124,7 @@ def send_slack_alert(webhook_url, repo, pr_number, review_body):
         try:
             requests.post(webhook_url, json=message, timeout=30)
             print("[SUCCESS] Slack alert sent")
-        except Exception as e:
+        except requests.RequestException as e:
             print(f"[WARNING] Slack alert failed: {e}")
 
 
